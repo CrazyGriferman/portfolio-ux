@@ -1,6 +1,6 @@
-require(`dotenv`).config();
+require(`dotenv`).config()
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 /**
  * @type {import('gatsby').GatsbyConfig}
@@ -10,9 +10,9 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emma-core/gatsby-config.js
-    siteTitle: `Qi Zhao`,
-    siteTitleAlt: `Qi Zhao's Portfolio`,
-    siteHeadline: `Qi Zhao's Portfolio`,
+    siteTitle: `Emma`,
+    siteTitleAlt: `Emma - Gatsby Starter Portfolio`,
+    siteHeadline: `Emma - Gatsby Theme from @lekoarts`,
     siteUrl: `https://emma.lekoarts.de`,
     siteDescription: `Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images`,
     siteImage: `/banner.jpg`,
@@ -66,4 +66,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-};
+}
