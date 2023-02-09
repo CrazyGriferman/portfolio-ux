@@ -9,7 +9,7 @@ type ProjectItemProps = {
     color: string;
     title: string;
     slug: string;
-    service: string;
+    contribution: string;
     client: string;
     cover: {
       childImageSharp: {
@@ -78,6 +78,9 @@ const ProjectItem = ({ node, style, eager }: ProjectItemProps) => (
         <GatsbyImage
           loading={eager ? `eager` : `lazy`}
           image={node.cover.childImageSharp.gatsbyImageData}
+          imgStyle={{
+            objectFit: `contain`,
+          }}
           alt=""
         />
       </div>

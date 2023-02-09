@@ -12,9 +12,9 @@ type ProjectInfoProps = {
 
 const ProjectInfo = ({ project }: ProjectInfoProps) => (
   <Flex sx={{ mt: 4, mb: [2, 4], flexWrap: `wrap` }}>
-    <Item name="Role" content={project.client} />
-    <Item name="Date" content={project.date} />
-    <Item name="Service" content={project.service} />
+    <Item name="角色" content={project.client} />
+    <Item name="日期" content={project.date} />
+    <Item name="收获" content={project.service} />
   </Flex>
 );
 

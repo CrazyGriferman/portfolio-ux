@@ -10,7 +10,7 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emma-core/gatsby-config.js
-    siteTitle: `Qi Zhao`,
+    siteTitle: `赵奇-作品集`,
     siteTitleAlt: `Qi Zhao's Portfolio`,
     siteHeadline: `Qi Zhao's Portfolio`,
     siteUrl: `https://emma.lekoarts.de`,

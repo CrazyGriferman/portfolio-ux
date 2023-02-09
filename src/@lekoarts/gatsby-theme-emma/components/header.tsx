@@ -66,14 +66,14 @@ const Header = ({ meta, nav }: HeaderProps) => {
           order: 3,
         }}
       >
-        <button
+        {/* <button
           sx={{ variant: `buttons.toggle`, fontWeight: `semibold` }}
           onClick={toggleColorMode}
           type="button"
           aria-label="Toggle dark mode"
         >
           {isDark ? `Light` : `Dark`}
-        </button>
+        </button> */}
       </div>
     </Flex>
   );
