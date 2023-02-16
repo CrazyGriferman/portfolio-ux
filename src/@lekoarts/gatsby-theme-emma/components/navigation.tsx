@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx, Flex } from "theme-ui";
 import { Link } from "gatsby";
+import {resumeLink} from "../assets/static";
 
 type NavigationProps = {
   nav: {
@@ -21,6 +22,13 @@ const Navigation = ({ nav }: NavigationProps) => (
     }}
     aria-label="Primary Navigation"
   >
+    <Link
+      sx={(t) => ({ ...t.styles?.a, color: `text`, ":hover": { color: `primary`, textDecoration: `none` } })}
+      key={"1"}
+      to={resumeLink}
+    >
+      简历
+    </Link>
     {/* {nav.map((n) => (
       <Link
         sx={(t) => ({ ...t.styles?.a, color: `text`, ":hover": { color: `primary`, textDecoration: `none` } })}

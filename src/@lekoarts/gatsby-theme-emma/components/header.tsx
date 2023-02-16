@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Flex, jsx, useColorMode } from "theme-ui";
+import { Box, Flex, jsx, useColorMode } from "theme-ui";
 import { Link } from "gatsby";
 import Navigation from "./navigation";
 import SocialLinks from "./social-links";
@@ -21,10 +21,11 @@ const Header = ({ meta, nav }: HeaderProps) => {
     setColorMode(isDark ? `light` : `dark`);
   };
 
+
   const navEmpty = nav.length === 0;
 
   return (
-    <Flex as="header" variant="layout.header">
+    <Flex style={{position: "sticky", top: 0, zIndex: `99`, boxShadow: `0 3px 12px rgb(0 0 0 / 7%), 0 1px 4px rgb(0 0 0 / 7%)`, backgroundColor: `#ffffff` }} as="header" variant="layout.header">
       {!navEmpty && <Navigation nav={nav} />}
       <Flex
         sx={{

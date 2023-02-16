@@ -10,13 +10,12 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emma-core/gatsby-config.js
-    siteTitle: `赵奇-作品集`,
-    siteTitleAlt: `Qi Zhao's Portfolio`,
-    siteHeadline: `Qi Zhao's Portfolio`,
-    siteUrl: `https://emma.lekoarts.de`,
+    siteTitle: `赵奇的作品集`,
+    siteTitleAlt: `赵奇的作品集`,
+    siteHeadline: `赵奇的作品集`,
+    siteUrl: `http://portfolio.crazygriferman.com/`,
     siteDescription: `Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
   },
   trailingSlash: `never`,
   plugins: [

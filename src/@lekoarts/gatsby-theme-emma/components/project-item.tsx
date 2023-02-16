@@ -37,6 +37,7 @@ const ProjectItem = ({ node, style, eager }: ProjectItemProps) => (
       sx={{
         left: 0,
         height: `100%`,
+        boxShadow: `0 3px 12px rgb(0 0 0 / 7%), 0 1px 4px rgb(0 0 0 / 7%)`,
         position: `absolute`,
         top: 0,
         width: `100%`,
