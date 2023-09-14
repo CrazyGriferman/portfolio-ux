@@ -1,0 +1,1 @@
+export const resumeLink = "https://docs.qq.com/pdf/DT1hQQm9EaVpuUnpn";

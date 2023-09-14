@@ -10,16 +10,24 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emma-core/gatsby-config.js
-    siteTitle: `Qi Zhao`,
-    siteTitleAlt: `Qi Zhao's Portfolio`,
-    siteHeadline: `Qi Zhao's Portfolio`,
-    siteUrl: `https://emma.lekoarts.de`,
+    siteTitle: `Qi's Portfolios`,
+    siteTitleAlt: `Qi's Portfolio`,
+    siteHeadline: `Qi's Portfolio`,
+    siteUrl: `http://portfolio.crazygriferman.com/`,
     siteDescription: `Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
   },
   trailingSlash: `never`,
   plugins: [
+    {
+      resolve: `gatsby-source-notion-api`,
+      options: {
+        token: `$INTEGRATION_TOKEN`,
+        databaseId: `$DATABASE_ID`,
+        propsToFrontmatter: true,
+        lowerTitleLevel: true,
+      },
+    },
     {
       resolve: `@lekoarts/gatsby-theme-emma`,
       // See the theme's README for all available options
@@ -38,7 +46,7 @@ module.exports = {
         short_name: `Emma`,
         description: `Minimalistic bright portfolio with full-width grid and large images`,
         start_url: `/`,
-        background_color: `#fff`,
+        background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#b83280`,

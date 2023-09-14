@@ -1,13 +1,14 @@
 /** @jsx jsx */
-import { jsx, Flex } from "theme-ui"
-import { Link } from "gatsby"
+import { jsx, Flex } from "theme-ui";
+import { Link } from "gatsby";
+import {resumeLink} from "../assets/static";
 
 type NavigationProps = {
   nav: {
-    title: string
-    slug: string
-  }[]
-}
+    title: string;
+    slug: string;
+  }[];
+};
 
 const Navigation = ({ nav }: NavigationProps) => (
   <Flex
@@ -21,7 +22,14 @@ const Navigation = ({ nav }: NavigationProps) => (
     }}
     aria-label="Primary Navigation"
   >
-    {nav.map((n) => (
+    <Link
+      sx={(t) => ({ ...t.styles?.a, color: `#000000`, ":hover": { color: `primary`, textDecoration: `none` } })}
+      key={"1"}
+      to={resumeLink}
+    >
+      Resume
+    </Link>
+    {/* {nav.map((n) => (
       <Link
         sx={(t) => ({ ...t.styles?.a, color: `text`, ":hover": { color: `primary`, textDecoration: `none` } })}
         key={n.slug}
@@ -29,8 +37,8 @@ const Navigation = ({ nav }: NavigationProps) => (
       >
         {n.title}
       </Link>
-    ))}
+    ))} */}
   </Flex>
-)
+);
 
-export default Navigation
+export default Navigation;

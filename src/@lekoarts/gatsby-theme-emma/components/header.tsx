@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Flex, jsx, useColorMode } from "theme-ui";
+import { Box, Flex, jsx, useColorMode } from "theme-ui";
 import { Link } from "gatsby";
 import Navigation from "./navigation";
 import SocialLinks from "./social-links";
@@ -21,15 +21,16 @@ const Header = ({ meta, nav }: HeaderProps) => {
     setColorMode(isDark ? `light` : `dark`);
   };
 
+
   const navEmpty = nav.length === 0;
 
   return (
-    <Flex as="header" variant="layout.header">
+    <Flex style={{position: "sticky", top: 0, zIndex: `99`, boxShadow: `0 3px 12px rgb(0 0 0 / 7%), 0 1px 4px rgb(0 0 0 / 7%)`, backgroundColor: `#ffffff` }} as="header" variant="layout.header">
       {!navEmpty && <Navigation nav={nav} />}
       <Flex
         sx={{
           fontWeight: `bold`,
-          fontSize: 4,
+          fontSize: 3,
           flex: navEmpty ? 1 : [`1 0 50%`, 1],
           justifyContent: navEmpty ? `flex-start` : [`flex-end`, `center`],
         }}
@@ -38,7 +39,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
           aria-label={`${meta.siteTitle}, Back to homepage`}
           sx={(t) => ({
             ...t.styles?.a,
-            color: `text`,
+            color: `#000000`,
             ":hover": { color: `primary`, textDecoration: `none` },
           })}
           to="/"
@@ -66,14 +67,14 @@ const Header = ({ meta, nav }: HeaderProps) => {
           order: 3,
         }}
       >
-        <button
+        {/* <button
           sx={{ variant: `buttons.toggle`, fontWeight: `semibold` }}
           onClick={toggleColorMode}
           type="button"
           aria-label="Toggle dark mode"
         >
           {isDark ? `Light` : `Dark`}
-        </button>
+        </button> */}
       </div>
     </Flex>
   );
