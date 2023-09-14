@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-source-notion-api`,
       options: {
-        token: `secret_deuwIOttriFnNU0fstoqOqMkFfDWpsg1zeEpzUtMEzq`,
-        databaseId: `afc296b0ae2a4c3ead36e405fb53cd6a`,
+        token: `$INTEGRATION_TOKEN`,
+        databaseId: `$DATABASE_ID`,
         propsToFrontmatter: true,
         lowerTitleLevel: true,
       },
