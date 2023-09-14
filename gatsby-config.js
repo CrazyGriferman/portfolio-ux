@@ -20,6 +20,15 @@ module.exports = {
   trailingSlash: `never`,
   plugins: [
     {
+      resolve: `gatsby-source-notion-api`,
+      options: {
+        token: `secret_deuwIOttriFnNU0fstoqOqMkFfDWpsg1zeEpzUtMEzq`,
+        databaseId: `afc296b0ae2a4c3ead36e405fb53cd6a`,
+        propsToFrontmatter: true,
+        lowerTitleLevel: true,
+      },
+    },
+    {
       resolve: `@lekoarts/gatsby-theme-emma`,
       // See the theme's README for all available options
       options: {},
