@@ -6149,6 +6149,15 @@ gatsby-source-filesystem@^5.12.0:
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
+gatsby-source-notion-api@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.npmmirror.com/gatsby-source-notion-api/-/gatsby-source-notion-api-0.12.0.tgz#7552b0c343116e7d4a913cd822203145771183c0"
+  integrity sha512-PdiKrsod9ZwMhbqLT/hcWnqtAjEaAntTBKuUX1U0dQiDvFj9wbW8vzZnH7Ua0VZ+Qrh0Mn2f+yeuMB0J9greuw==
+  dependencies:
+    node-fetch "^2.6.1"
+    or-pipets "^1.0.1"
+    yaml "^1.10.2"
+
 gatsby-source-notion@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmmirror.com/gatsby-source-notion/-/gatsby-source-notion-1.2.0.tgz#0e29bc404ab49ed88f527e3923693395b7eb70e7"
@@ -9034,6 +9043,11 @@ optionator@^0.9.1:
     levn "^0.4.1"
     prelude-ls "^1.2.1"
     type-check "^0.4.0"
+
+or-pipets@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/or-pipets/-/or-pipets-1.0.1.tgz#0699c99f95a535614a585cd7fb3a1a216a47b5c0"
+  integrity sha512-xgIIdB4w00pbhtNPYLF/caifwbc4KrE7jy4WqiDRzRrC2g3YVR4ypRwbKRA/bXzftQEA2SK8c+wKI2R7kqKiLQ==
 
 ordered-binary@^1.2.4:
   version "1.4.1"
