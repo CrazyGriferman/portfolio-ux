@@ -10,7 +10,7 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emma-core/gatsby-config.js
-    siteTitle: `Qi's Portfolio`,
+    siteTitle: `Qi's Portfolios`,
     siteTitleAlt: `Qi's Portfolio`,
     siteHeadline: `Qi's Portfolio`,
     siteUrl: `http://portfolio.crazygriferman.com/`,
