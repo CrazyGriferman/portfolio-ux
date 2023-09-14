@@ -10,9 +10,9 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emma-core/gatsby-config.js
-    siteTitle: `赵奇的作品集`,
-    siteTitleAlt: `赵奇的作品集`,
-    siteHeadline: `赵奇的作品集`,
+    siteTitle: `Qi's Portfolio`,
+    siteTitleAlt: `Qi's Portfolio`,
+    siteHeadline: `Qi's Portfolio`,
     siteUrl: `http://portfolio.crazygriferman.com/`,
     siteDescription: `Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images`,
     siteImage: `/banner.jpg`,
@@ -37,7 +37,7 @@ module.exports = {
         short_name: `Emma`,
         description: `Minimalistic bright portfolio with full-width grid and large images`,
         start_url: `/`,
-        background_color: `#fff`,
+        background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#b83280`,

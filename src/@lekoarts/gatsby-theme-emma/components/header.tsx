@@ -30,7 +30,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
       <Flex
         sx={{
           fontWeight: `bold`,
-          fontSize: 4,
+          fontSize: 3,
           flex: navEmpty ? 1 : [`1 0 50%`, 1],
           justifyContent: navEmpty ? `flex-start` : [`flex-end`, `center`],
         }}
@@ -39,7 +39,7 @@ const Header = ({ meta, nav }: HeaderProps) => {
           aria-label={`${meta.siteTitle}, Back to homepage`}
           sx={(t) => ({
             ...t.styles?.a,
-            color: `text`,
+            color: `#000000`,
             ":hover": { color: `primary`, textDecoration: `none` },
           })}
           to="/"

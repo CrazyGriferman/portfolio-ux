@@ -23,11 +23,11 @@ const Navigation = ({ nav }: NavigationProps) => (
     aria-label="Primary Navigation"
   >
     <Link
-      sx={(t) => ({ ...t.styles?.a, color: `text`, ":hover": { color: `primary`, textDecoration: `none` } })}
+      sx={(t) => ({ ...t.styles?.a, color: `#000000`, ":hover": { color: `primary`, textDecoration: `none` } })}
       key={"1"}
       to={resumeLink}
     >
-      简历
+      Resume
     </Link>
     {/* {nav.map((n) => (
       <Link
