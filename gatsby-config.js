@@ -11,7 +11,7 @@ module.exports = {
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emma-core/gatsby-config.js
     siteTitle: `Qi's Portfolios`,
-    siteTitleAlt: `Qi's Portfolio`,
+    siteTitleAlt: `Qi's Portfolioss`,
     siteHeadline: `Qi's Portfolio`,
     siteUrl: `http://portfolio.crazygriferman.com/`,
     siteDescription: `Minimalistic portfolio with full-width grid, page transitions, support for additional MDX pages, and a focus on large images`,
